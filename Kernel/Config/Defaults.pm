@@ -394,6 +394,15 @@ sub LoadDefaults {
 #        version => 3,
 #    };
 
+#   # Enable support for LDAP TLS
+#   $Self->{'AuthModule::LDAP::TLS'} = 1;
+#
+#   # Set params for LDAP TLS (see Net::LDAP->start_tls() for supported params)
+#   $Self->{'AuthModule::LDAP::TLS::Params'} = {
+#       verify   => 'require',
+#       checkcrl => 1,
+#   };
+
     # Die if backend can't work, e. g. can't connect to server.
 #    $Self->{'AuthModule::LDAP::Die'} = 1;
 
@@ -467,6 +476,15 @@ sub LoadDefaults {
 #        async   => 0,
 #        version => 3,
 #    };
+
+#   # Enable support for LDAP TLS
+#   $Self->{'AuthSyncModule::LDAP::TLS'} = 1;
+#
+#   # Set params for LDAP TLS (see Net::LDAP->start_tls() for supported params)
+#   $Self->{'AuthSyncModule::LDAP::TLS::Params'} = {
+#       verify   => 'require',
+#       checkcrl => 1,
+#   };
 
     # Die if backend can't work, e. g. can't connect to server.
 #    $Self->{'AuthSyncModule::LDAP::Die'} = 1;
@@ -1279,6 +1297,15 @@ via the Preferences button after logging in.
 #        async   => 0,
 #        version => 3,
 #    };
+
+#   # Enable support for LDAP TLS
+#   $Self->{'Customer::AuthModule::LDAP::TLS'} = 1;
+#
+#   # Set params for LDAP TLS (see Net::LDAP->start_tls() for supported params)
+#   $Self->{'Customer::AuthModule::LDAP::TLS::Params'} = {
+#       verify   => 'require',
+#       checkcrl => 1,
+#   };
 
     # Die if backend can't work, e. g. can't connect to server.
 #    $Self->{'Customer::AuthModule::LDAP::Die'} = 1;
